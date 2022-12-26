@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: 'Grand Slang';
+        src: local('Grand Slang'), url('./assets/grandslang-roman.otf') format('opentype');
+    }
+    body{
+        @apply font-grand;
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer;
+    }
+}
