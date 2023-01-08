@@ -43,13 +43,9 @@ const Project = () => {
           <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>
             Project
           </p>
-          <p className='py-6'>Check out some of my recent projects</p>
+          <p className='text-2xl py-6'>Check out some of my recent projects</p>
         </div>
-
-{/* container for projects */}
 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          
-          {/* Gird Item */}
           {projects.map((item, index) => (
   <div
     key={index}
