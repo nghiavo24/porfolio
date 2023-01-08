@@ -5,6 +5,9 @@ module.exports = {
     fontFamily: {
       'grand': ['grand slang'],
       'darby': ['darby sans']
+    },
+    letterSpacing: {
+      normal: "0.1em",
     }
   },
   plugins: [],

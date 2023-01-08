@@ -13,6 +13,7 @@
     }
     body{
         @apply font-darby;
+        @apply tracking-normal
     }
     h1,
     h2{
@@ -21,6 +22,10 @@
     li {
         @apply px-4;
         @apply cursor-pointer;
+        @apply font-grand
+    }
+    button{
+        @apply font-grand
     }
 }
 
