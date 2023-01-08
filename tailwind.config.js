@@ -8,7 +8,7 @@ module.exports = {
     },
     letterSpacing: {
       normal: "0.1em",
-    }
+    },
   },
   plugins: [],
 }
