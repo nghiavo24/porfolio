@@ -13,7 +13,7 @@ const Navbar = () => {
         <div>
             <img src={Logo} alt="Logo Image" className='w-3/12 pt-2' />
         </div>
-            <ul className='hidden md:flex'>
+            <ul className='hidden md:flex text-2xl'>
             <li><Link  to="home" smooth={true} duration={500}>Home</Link></li>
             <li><Link  to="about" smooth={true} duration={500}>About</Link></li>
             <li><Link  to="skill" smooth={true} duration={500}>Skills</Link></li>
@@ -21,11 +21,11 @@ const Navbar = () => {
             <li><Link  to="contact" smooth={true} duration={500}>Contact</Link></li>
             </ul>
 
-        <div className='md:hidden z-10' onClick={handleClick}>
-            {!nav ? <FaBars /> : <FaTimes />}
+        <div className='md:hidden z-10 '  onClick={handleClick}>
+            {!nav ? <FaBars style={{ width: '2rem', height: 'auto'}} /> : <FaTimes style={{ width: '2rem', height: 'auto'}}/>}
         </div>
         
-        <ul className={!nav ? 'hidden' : 'opacity-1 absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
+        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
             <li className='py-6 text-4xl'>
           <Link onClick={handleClick} to='home' smooth={true} duration={500}>
             Home
