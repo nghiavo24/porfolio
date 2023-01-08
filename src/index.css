@@ -7,8 +7,16 @@
         font-family: 'Grand Slang';
         src: local('Grand Slang'), url('./assets/grandslang-roman.otf') format('opentype');
     }
+    @font-face {
+        font-family: 'Darby Sans';
+        src: local('Darby Sans'), url('./assets/Darby_Sans.ttf') format('truetype');
+    }
     body{
-        @apply font-grand;
+        @apply font-darby;
+    }
+    h1,
+    h2{
+        @apply font-grand
     }
     li {
         @apply px-4;

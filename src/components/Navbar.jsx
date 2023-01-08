@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa';
+import {FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
 import {Link} from 'react-scroll';
@@ -13,12 +13,12 @@ const Navbar = () => {
         <div>
             <img src={Logo} alt="Logo Image" className='w-3/12 pt-2' />
         </div>
-            <ul className='hidden md:flex text-2xl'>
-            <li><Link  to="home" smooth={true} duration={500}>Home</Link></li>
-            <li><Link  to="about" smooth={true} duration={500}>About</Link></li>
-            <li><Link  to="skill" smooth={true} duration={500}>Skills</Link></li>
-            <li><Link  to="project" smooth={true} duration={500}>Projects</Link></li>
-            <li><Link  to="contact" smooth={true} duration={500}>Contact</Link></li>
+            <ul className='hidden md:flex text-2xl '>
+            <li className='hover:text-pink-600'><Link  to="home" smooth={true} duration={500}>Home</Link></li>
+            <li className='hover:text-pink-600'><Link  to="about" smooth={true} duration={500}>About</Link></li>
+            <li className='hover:text-pink-600'><Link  to="skill" smooth={true} duration={500}>Skills</Link></li>
+            <li className='hover:text-pink-600'><Link  to="project" smooth={true} duration={500}>Projects</Link></li>
+            <li className='hover:text-pink-600'><Link  to="contact" smooth={true} duration={500}>Contact</Link></li>
             </ul>
 
         <div className='md:hidden z-10 '  onClick={handleClick}>
