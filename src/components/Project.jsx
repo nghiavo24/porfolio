@@ -13,22 +13,22 @@ const Project = () => {
             image: Project1,
             github:"https://github.com/nghiavo24/the-dev-hub-fe",
             live:"https://the-dev-hub.vercel.app/",
-            description: "Using MERN stack"
+            description: "Organization tool to facilitate job search. The application is fully functional with Firebase authentication and styling was done using Tailwind."
         },
         {
             id:2,
             name:"Dealio",
             image: Project2,
-            github:"",
-            live:"",
-            description: ""
+            github:"https://github.com/nghiavo24/online-store-fe",
+            live:"https://online-store-pt8ruqtva-guillermoaviles.vercel.app/",
+            description: "An online store where users can buy and sell items. The web application was built using MERN technology and it has full CRUD function."
         },
         {
             id:3,
             name:"Game of Thrones",
             image: Project3,
-            github:"",
-            live:"",
+            github:"https://github.com/nghiavo24/game-of-thrones",
+            live:"https://game-of-thrones-nu.vercel.app/",
             description: "A mini-wikipedia about game show Game of Thrones. It is a practice using Axios to request data from 3rd-party API and presenting it. It is also a deep dive into React as a JS framework. "
         },
         {
@@ -37,7 +37,7 @@ const Project = () => {
             image: Project4,
             github:"https://github.com/nghiavo24/Did-you-know-that",
             live:"https://did-you-know-that.vercel.app/",
-            description: ""
+            description: "A trivia game about Marvel. HTML, CSS and vanilla JavaScript were used to build this fun game."
         },
     
     ]
@@ -46,13 +46,13 @@ const Project = () => {
   return (
     <div name='project' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div className='pt-16'>
+        <div className='pt-32'>
           <h1 className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>
             Projects
           </h1>
           <p className='text-2xl py-6'>Check out some of my recent projects</p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
                   {projects.map((item, index) => (
             <div
               key={index}
