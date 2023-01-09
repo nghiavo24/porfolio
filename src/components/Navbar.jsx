@@ -3,23 +3,29 @@ import {FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
 import {Link} from 'react-scroll';
-import Logo from '../assets/logo_initials.png'
+import Logo from '../assets/logo_initials.png';
+import {motion as m} from 'framer-motion';
 
 const Navbar = () => {
     const[nav, setNav] = useState(false)
+    const[move, setMove] = useState(false)
     const handleClick = () => setNav(!nav)
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
         <div>
             <img src={Logo} alt="Logo Image" className='w-3/12 pt-2' />
         </div>
-            <ul className='hidden md:flex text-2xl '>
-            <li className='hover:text-pink-600'><Link  to="home" smooth={true} duration={500}>Home</Link></li>
-            <li className='hover:text-pink-600'><Link  to="about" smooth={true} duration={500}>About</Link></li>
-            <li className='hover:text-pink-600'><Link  to="skill" smooth={true} duration={500}>Skills</Link></li>
-            <li className='hover:text-pink-600'><Link  to="project" smooth={true} duration={500}>Projects</Link></li>
-            <li className='hover:text-pink-600'><Link  to="contact" smooth={true} duration={500}>Contact</Link></li>
-            </ul>
+            <m.ul 
+            initial={{ x: move ? -300 : 300, opacity: 0 }}
+            transition={{duration: 1.2 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            className='hidden md:flex text-2xl '>
+              <li className='hover:text-pink-600'><Link  to="home" smooth={true} duration={500}>Home</Link></li>
+              <li className='hover:text-pink-600'><Link  to="about" smooth={true} duration={500}>About</Link></li>
+              <li className='hover:text-pink-600'><Link  to="skill" smooth={true} duration={500}>Skills</Link></li>
+              <li className='hover:text-pink-600'><Link  to="project" smooth={true} duration={500}>Projects</Link></li>
+              <li className='hover:text-pink-600'><Link  to="contact" smooth={true} duration={500}>Contact</Link></li>
+            </m.ul>
 
         <div className='md:hidden z-10 '  onClick={handleClick}>
           <div>
