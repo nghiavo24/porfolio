@@ -31,9 +31,9 @@ export const Home = () => {
               </p>
             </div>
             <div className="grid gap-8 items-start justify-start py-8">
-                <button className="text-white bg-gradient-to-r from-purple-700 to-pink-700 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+                <button className="hover:animate-headShake text-white bg-gradient-to-r from-purple-700 to-pink-700 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
                   <span className="flex items-center space-x-5">
-                    <span className="px-2 text-[#ccd6f6] text-xl hover:text-gray-100 transition duration-200">About Me</span>
+                    <span className="px-2 text-[#ccd6f6] text-xl hover:text-gray-100 transition duration-200"><Link to="about" smooth={true} duration={500}>About Me</Link></span>
                     <span className='hover:rotate-90 duration-200'>
                     <Link to="about" smooth={true} duration={500}><HiArrowNarrowRight size='1.25rem' /></Link>
                     </span>
