@@ -1,5 +1,8 @@
 import React from 'react';
 import Project1 from '../assets/Project1.png';
+import Project2 from '../assets/Project2.png';
+import Project3 from '../assets/Project3.png';
+import Project4 from '../assets/Project4.png';
 import { AiFillEye as Live, AiFillGithub as Github } from 'react-icons/ai'
 
 const Project = () => {   
@@ -14,26 +17,26 @@ const Project = () => {
         },
         {
             id:2,
-            name:"React JS Application",
-            image:'',
+            name:"Dealio",
+            image: Project2,
             github:"",
             live:"",
             description: ""
         },
         {
             id:3,
-            name:"React JS Application",
-            image:'',
+            name:"Game of Thrones",
+            image: Project3,
             github:"",
             live:"",
-            description: ""
+            description: "A mini-wikipedia about game show Game of Thrones. It is a practice using Axios to request data from 3rd-party API and presenting it. It is also a deep dive into React as a JS framework. "
         },
         {
             id:4,
-            name:"React JS Application",
-            image:'',
-            github:"",
-            live:"",
+            name:"Did you know that?",
+            image: Project4,
+            github:"https://github.com/nghiavo24/Did-you-know-that",
+            live:"https://did-you-know-that.vercel.app/",
             description: ""
         },
     
