@@ -1,8 +1,6 @@
 import React from 'react'
 
-const Project = () => {
-
-   
+const Project = () => {   
     const projects =[
         {
             id:1,
@@ -39,9 +37,9 @@ const Project = () => {
   return (
     <div name='project' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div className='pb-8'>
+        <div className='pt-16'>
           <h1 className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>
-            Project
+            Projects
           </h1>
           <p className='text-2xl py-6'>Check out some of my recent projects</p>
         </div>
@@ -62,18 +60,13 @@ const Project = () => {
         {/* eslint-disable-next-line */}
         <a href={item.github} target="_blank">
           <button
-            className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-          >
+            className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
             Code
           </button>
         </a>
         {/* eslint-disable-next-line */}
         <a href={item.live} target="_blank">
-          <button
-            className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg"
-          >
+          <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
             Live
           </button>
         </a>

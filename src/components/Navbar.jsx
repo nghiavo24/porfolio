@@ -12,13 +12,17 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-        <div>
-            <img src={Logo} alt="Logo Image" className='w-3/12 pt-2' />
-        </div>
+        <m.div
+        initial={{x: -500, opacity: 0, scale: 1}}
+        animate={{x: 0, opacity: 1, scale: 1}}
+        transition={{ duration: 1.2 }}
+        >
+            <img src={Logo} alt="Logo Image" className='w-[125px] pt-4' />
+        </m.div>
             <m.ul 
-            initial={{ x: move ? -300 : 300, opacity: 0 }}
-            transition={{duration: 1.2 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{x: 500, opacity: 0, scale: 1}}
+            animate={{x: 0, opacity: 1, scale: 1}}
+            transition={{ duration: 1.2 }}
             className='hidden md:flex text-2xl '>
               <li className='hover:text-pink-600'><Link  to="home" smooth={true} duration={500}>Home</Link></li>
               <li className='hover:text-pink-600'><Link  to="about" smooth={true} duration={500}>About</Link></li>
@@ -27,7 +31,12 @@ const Navbar = () => {
               <li className='hover:text-pink-600'><Link  to="contact" smooth={true} duration={500}>Contact</Link></li>
             </m.ul>
 
-        <div className='md:hidden z-10 '  onClick={handleClick}>
+        <m.div
+          initial={{x: 500, opacity: 0, scale: 1}}
+          animate={{x: 0, opacity: 1, scale: 1}}
+          transition={{ duration: 1.2 }}
+         className='md:hidden z-10 '
+         onClick={handleClick}>
           <div>
             <button class="relative group">
               <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
@@ -44,41 +53,31 @@ const Navbar = () => {
               </div>
             </button>
           </div>
-        </div>
+        </m.div>
         
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
             <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className='py-6 text-4xl'>
-          {' '}
-          <Link onClick={handleClick} to='about' smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className='py-6 text-4xl'>
-          {' '}
-          <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li className='py-6 text-4xl'>
-          {' '}
-          <Link onClick={handleClick} to='work' smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-        <li className='py-6 text-4xl'>
-          {' '}
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
+              <Link onClick={handleClick} to='home' smooth={true} duration={500}>Home</Link>
+            </li>
+            <li className='py-6 text-4xl'>
+              <Link onClick={handleClick} to='about' smooth={true} duration={500}>About</Link>
+            </li>
+            <li className='py-6 text-4xl'>
+              <Link onClick={handleClick} to='skill' smooth={true} duration={500}>Skills</Link>
+            </li>
+            <li className='py-6 text-4xl'>
+              <Link onClick={handleClick} to='project' smooth={true} duration={500}>Projects</Link>
+            </li>
+            <li className='py-6 text-4xl'>
+              <Link onClick={handleClick} to='contact' smooth={true} duration={500}>Contact</Link>
+            </li>
         </ul>
         <div className='hidden md:flex fixed flex-col top-[35%] left-0'>
-    <ul>
+    <m.ul
+    initial={{x: -500, opacity: 0, scale: 1}}
+    animate={{x: 0, opacity: 1, scale: 1}}
+    transition={{ duration: 1.2 }}
+    >
         <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
             <a className='flex justify-between items-center w-full text-gray-300'
             href='https://www.linkedin.com/in/nghia-vo/'>
@@ -103,7 +102,7 @@ const Navbar = () => {
                 Resume <BsFillPersonLinesFill size={30}/>
             </a>
         </li>
-    </ul>
+    </m.ul>
         </div>
     </div>
   )
