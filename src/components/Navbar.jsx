@@ -5,12 +5,16 @@ import {BsFillPersonLinesFill} from 'react-icons/bs';
 import {Link} from 'react-scroll';
 import Logo from '../assets/logo_initials.png';
 import {motion as m} from 'framer-motion';
+import Switcher from './DarkMode/Switcher'
 
 const Navbar = () => {
     const[nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
+
+
+
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+    <div className='bg-[#DDD4D0] fixed w-full h-[80px] flex justify-between items-center px-4 dark:bg-[#211A1D] dark:text-gray-200'>
         <m.div
         initial={{x: -500, opacity: 0, scale: 1}}
         animate={{x: 0, opacity: 1, scale: 1}}
@@ -23,38 +27,42 @@ const Navbar = () => {
             animate={{x: 0, opacity: 1, scale: 1}}
             transition={{ duration: 1.2 }}
             className='hidden md:flex text-2xl '>
-              <li className='hover:text-pink-600 hover:animate-headShake'><Link  to="home" smooth={true} duration={500}>Home</Link></li>
-              <li className='hover:text-pink-600 hover:animate-headShake'><Link  to="about" smooth={true} duration={500}>About</Link></li>
-              <li className='hover:text-pink-600 hover:animate-headShake'><Link  to="skill" smooth={true} duration={500}>Skills</Link></li>
-              <li className='hover:text-pink-600 hover:animate-headShake'><Link  to="project" smooth={true} duration={500}>Projects</Link></li>
-              <li className='hover:text-pink-600 hover:animate-headShake'><Link  to="contact" smooth={true} duration={500}>Contact</Link></li>
+              <li className='hover:text-[#f08080] dark:hover:text-pink-600 hover:animate-headShake'><Link  to="home" smooth={true} duration={500}>Home</Link></li>
+              <li className='hover:text-[#f08080] dark:hover:text-pink-600 hover:animate-headShake'><Link  to="about" smooth={true} duration={500}>About</Link></li>
+              <li className='hover:text-[#f08080] dark:hover:text-pink-600 hover:animate-headShake'><Link  to="skill" smooth={true} duration={500}>Skills</Link></li>
+              <li className='hover:text-[#f08080] dark:hover:text-pink-600 hover:animate-headShake'><Link  to="project" smooth={true} duration={500}>Projects</Link></li>
+              <li className='hover:text-[#f08080] dark:hover:text-pink-600 hover:animate-headShake'><Link  to="contact" smooth={true} duration={500}>Contact</Link></li>
+              <li><Switcher/></li>
             </m.ul>
 
         <m.div
           initial={{x: 500, opacity: 0, scale: 1}}
           animate={{x: 0, opacity: 1, scale: 1}}
           transition={{ duration: 1.2 }}
-         className='md:hidden z-10 '
-         onClick={handleClick}>
-          <div>
+         className='md:hidden z-10 flex justify-center pt-4'>
+          <div className='py-3 px-6'>
+            <Switcher />
+          </div>
+          <div onClick={handleClick}>
             <button class="relative group">
-              <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
+              <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all ring-0 ring-black hover:ring-5 group-focus:ring-4 dark:ring-gray-300 dark:hover:ring-8 dark:group-focus:ring-4 ring-opacity-75 dark:ring-opacity-30 duration-200 shadow-md">
                 <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
-                  <div class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-y-6 delay-100"></div>
-                  <div class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-y-6 delay-75"></div>
-                  <div class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-y-6"></div>
+                  <div class="bg-black dark:bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-y-6 delay-100"></div>
+                  <div class="bg-black dark:bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-y-6 delay-75"></div>
+                  <div class="bg-black dark:bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-y-6"></div>
 
                   <div class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
-                    <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"></div>
-                    <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"></div>
+                    <div class="absolute bg-black dark:bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"></div>
+                    <div class="absolute bg-black dark:bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"></div>
                   </div>
                 </div>
               </div>
             </button>
           </div>
+        
         </m.div>
         
-        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
+        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#DDD4D0] dark:bg-[#211A1D] flex flex-col justify-center items-center'}>
             <li className='py-6 text-4xl hover:text-pink-600 hover:animate-headShake'>
               <Link onClick={handleClick} to='home' smooth={true} duration={500}>Home</Link>
             </li>
@@ -77,7 +85,7 @@ const Navbar = () => {
     animate={{x: 0, opacity: 1, scale: 1}}
     transition={{ duration: 1.2 }}
     >
-        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 rounded-lg'>
+        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#003f88] dark:bg-blue-600 rounded-lg'>
             <a className='flex justify-between items-center w-full text-gray-300'
             href='https://www.linkedin.com/in/nghia-vo/'target='_blank' rel='noreferrer'>
                 Linkedin <FaLinkedin size={30} />
@@ -89,13 +97,13 @@ const Navbar = () => {
                 Github <FaGithub size={30}/>
             </a>
         </li>
-        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0] rounded-lg'>
+        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#9cc5a1] dark:bg-[#6fc2b0] rounded-lg'>
             <a className='flex justify-between items-center w-full text-gray-300'
             href='mailto:nghia.vo1452@gmail.com'target='_blank' rel='noreferrer' >
                 Email <HiOutlineMail size={30}/>
             </a>
         </li>
-        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69] rounded-lg'>
+        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#696969] dark:bg-[#565f69] rounded-lg'>
             <a className='flex justify-between items-center w-full text-gray-300'
             href='https://drive.google.com/file/d/1t7aSD33fM8BGrBnrf-jB7suOvrm3l9YK/view?usp=sharing' target='_blank' rel='noreferrer'>
                 Resume <BsFillPersonLinesFill size={30}/>
