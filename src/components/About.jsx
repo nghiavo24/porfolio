@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-scroll'
-
+import {FaFileDownload} from 'react-icons/fa'
 
 
 const About = () => {
@@ -18,8 +18,13 @@ const About = () => {
                         <p> Hello! I'm Nathan.</p>
                         <br />
                         <Link to='project'smooth={true} duration={500} ><p className='italic hover:text-pink-600 underline hover:cursor-pointer text-base'>Check out some of my recent projects</p></Link>
+                        <div className='pt-8'>
+                            <button class=" w-52 hover:animate-headShake text-white bg-gradient-to-r from-purple-700 to-pink-700 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-xl px-5 py-2.5 text-center mr-2 mb-2">
+                                <a href='https://drive.google.com/file/d/1t7aSD33fM8BGrBnrf-jB7suOvrm3l9YK/view?usp=sharing' target='_blank' rel='noreferrer'>View my resume</a>
+                            </button>
+                        </div>
                     </div>
-                    <div className='text-lg'>
+                    <div className='text-base'>
                         <p>As a software developer student at General Assembly, I accumulated over 480+ hours of professional training in the fundamentals of software development. During that time, I had many opportunities to work with a variety of developers and teams across several time zones. It has helped me to develop a working style that emphasizes collaboration, communication and adaptability.</p>
                         <br />
                         <p>My passion for learning is the most valuable asset about myself. As I continue on my journey as a developer, I get excited whenver I am being introduced or exposed to a new technology or language.</p>
