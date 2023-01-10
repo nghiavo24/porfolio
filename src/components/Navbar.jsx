@@ -1,9 +1,10 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import {FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
 import {Link} from 'react-scroll';
 import DarkModeLogo from '../assets/DarkModeLogo.png';
+
 import {motion as m} from 'framer-motion';
 import Switcher from './DarkMode/Switcher';
 

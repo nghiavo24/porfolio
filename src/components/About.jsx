@@ -17,7 +17,7 @@ const About = () => {
                     <div className='sm:text-right text-4xl justify-center flex-col flex items-center'>
                         <p> Hello! I'm <span className='text-[#F08080] dark:text-pink-600'>Nathan</span></p>
                         <br />
-                        <Link to='project'smooth={true} duration={500} ><p className='italic hover:text-pink-600 underline hover:cursor-pointer text-base'>Check out some of my recent projects</p></Link>
+                        <Link to='project'smooth={true} duration={500} ><p className='italic hover:text-[#F08080] dark:hover:text-pink-600 underline hover:cursor-pointer text-base'>Check out some of my recent projects</p></Link>
                         <div className='pt-8'>
                             <button className=" hover:text-white dark:hover:text-black w-52 hover:animate-headShake bg-gradient-to-r from-[#f08080] to-[#f3d8c7]  dark:from-purple-700 dark:to-pink-700 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-[#db7f8e] dark:focus:ring-purple-800 font-medium rounded-lg text-xl px-5 py-2.5 text-center mr-2 mb-2">
                                 <a href='https://drive.google.com/file/d/1t7aSD33fM8BGrBnrf-jB7suOvrm3l9YK/view?usp=sharing' target='_blank' rel='noreferrer'>View my resume</a>
