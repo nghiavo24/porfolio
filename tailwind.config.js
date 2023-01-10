@@ -37,7 +37,7 @@ module.exports = {
       },
     },
       animation: {
-        headShake: 'headShake 2s 10'
+        headShake: 'headShake 2s 1'
       }
     },
   },

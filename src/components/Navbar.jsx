@@ -3,15 +3,15 @@ import {FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
 import {Link} from 'react-scroll';
-import Logo from '../assets/logo_initials.png';
+import DarkModeLogo from '../assets/DarkModeLogo.png';
+import LightModeLogo from '../assets/LightModeLogo.png';
 import {motion as m} from 'framer-motion';
-import Switcher from './DarkMode/Switcher'
+import Switcher from './DarkMode/Switcher';
+
 
 const Navbar = () => {
     const[nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
-
-
 
   return (
     <div className='bg-[#DDD4D0] fixed w-full h-[80px] flex justify-between items-center px-4 dark:bg-[#211A1D] dark:text-gray-200'>
@@ -20,7 +20,7 @@ const Navbar = () => {
         animate={{x: 0, opacity: 1, scale: 1}}
         transition={{ duration: 1.2 }}
         >
-            <img src={Logo} alt="Logo" className='w-[125px] pt-4' />
+            <img src={DarkModeLogo} alt="Logo" className='w-[125px] pt-4' />
         </m.div>
             <m.ul 
             initial={{x: 500, opacity: 0, scale: 1}}
