@@ -13,7 +13,7 @@ const Project = () => {
             image: Project1,
             github:"https://github.com/nghiavo24/the-dev-hub-fe",
             live:"https://the-dev-hub.vercel.app/",
-            description: "Organization tool to facilitate job search. The application is fully functional with Firebase authentication and styling was done using Tailwind."
+            description: "Organization tool to facilitate job search. The app is fully functional, has full CRUD actions and equiped with Firebase authentication and styling was done using Tailwind."
         },
         {
             id:2,
@@ -21,7 +21,7 @@ const Project = () => {
             image: Project2,
             github:"https://github.com/nghiavo24/online-store-fe",
             live:"https://online-store-pt8ruqtva-guillermoaviles.vercel.app/",
-            description: "An online store where users can buy and sell items. The web application was built using MERN technology and it has full CRUD function."
+            description: "An online store where users can buy and sell items. The web application was built using MERN technology and it has full CRUD actions."
         },
         {
             id:3,

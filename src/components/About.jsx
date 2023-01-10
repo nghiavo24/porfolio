@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-scroll'
 
 
 
@@ -12,14 +13,19 @@ const About = () => {
                     <h1 className='text-4xl font-bold inline border-b-4 border-pink-600'>About</h1>
                 </div>
                     </div>
-                <div className='max-w-[1200px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-                    <div className='sm:text-right text-4xl font-bold'>
-                        <p>
-                            Hi👋 I'm Nathan. Nice to meet you!
-                        </p>
+                <div className='max-w-[1400px] w-full grid sm:grid-cols-2 gap-8 px-4'>
+                    <div className='sm:text-right text-4xl justify-center flex-col flex'>
+                        <p> Hello! I'm Nathan.</p>
+                        <br />
+                        <Link to='project'smooth={true} duration={500} ><p className='italic hover:text-pink-600 underline hover:cursor-pointer text-base'>Check out some of my recent projects</p></Link>
                     </div>
-                    <div className='text-xl'>
-                        <p>My background in Healthcare industry and my experience in serving a variety of customers with different background enables me to have a strong foundation in communication, collaboration in teams efficiently and I have also learned how to lead a team. I am passionate about improving or creating applications that impact people in a positive way, whether it is through Healthcare or simply making an application more accessible. </p>
+                    <div className='text-lg'>
+                        <p>As a software developer student at General Assembly, I accumulated over 480+ hours of professional training in the fundamentals of software development. During that time, I had many opportunities to work with a variety of developers and teams across several time zones. It has helped me to develop a working style that emphasizes collaboration, communication and adaptability.</p>
+                        <br />
+                        <p>My passion for learning is the most valuable asset about myself. As I continue on my journey as a developer, I get excited whenver I am being introduced or exposed to a new technology or language.</p>
+                        <br />
+                        <p>I am seeking a new position as a developer. Refer me to someone you know. Or better yet, hire me!</p>
+                        
                     </div>
                 </div>
         </div>

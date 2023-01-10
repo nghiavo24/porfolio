@@ -8,7 +8,6 @@ import {motion as m} from 'framer-motion';
 
 const Navbar = () => {
     const[nav, setNav] = useState(false)
-    const[move, setMove] = useState(false)
     const handleClick = () => setNav(!nav)
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
@@ -17,7 +16,7 @@ const Navbar = () => {
         animate={{x: 0, opacity: 1, scale: 1}}
         transition={{ duration: 1.2 }}
         >
-            <img src={Logo} alt="Logo Image" className='w-[125px] pt-4' />
+            <img src={Logo} alt="Logo" className='w-[125px] pt-4' />
         </m.div>
             <m.ul 
             initial={{x: 500, opacity: 0, scale: 1}}
@@ -98,7 +97,7 @@ const Navbar = () => {
         </li>
         <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69] rounded-lg'>
             <a className='flex justify-between items-center w-full text-gray-300'
-            href=''>
+            href='https://drive.google.com/file/d/1t7aSD33fM8BGrBnrf-jB7suOvrm3l9YK/view?usp=sharing'>
                 Resume <BsFillPersonLinesFill size={30}/>
             </a>
         </li>
