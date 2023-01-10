@@ -30,16 +30,18 @@ export const Home = () => {
                 <span>{text}</span>
               </p>
             </div>
-            <div className="grid gap-8 items-start justify-start py-8 ">
-                <button className="group hover:animate-headShake text-white bg-gradient-to-r from-[#f08080] to-[#f3d8c7] dark:from-purple-700 dark:to-pink-700 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-[#db7f8e] dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
-                  <span className="flex items-center space-x-5">
-                    <span className="px-2 text-white dark:text-[#ccd6f6] text-xl group-hover:text-black dark:group-hover:text-black transition duration-200"><Link to="about" smooth={true} duration={500}>About Me</Link></span>
-                    <span className='group-hover:rotate-90 duration-300 group-hover:text-black dark:group-hover:text-black'>
-                    <Link to="about" smooth={true} duration={500}><HiArrowNarrowRight size='1.25rem' /></Link>
+            <Link to="about" smooth={true} duration={500}>
+              <div className="grid gap-8 items-start justify-start py-8 ">
+                  <button className="group hover:animate-headShake text-white bg-gradient-to-r from-[#f08080] to-[#f3d8c7] dark:from-purple-700 dark:to-pink-700 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-[#db7f8e] dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+                    <span className="flex items-center space-x-5">
+                      <span className="px-2 text-white dark:text-[#ccd6f6] text-xl group-hover:text-black dark:group-hover:text-black transition duration-200"><Link to="about" smooth={true} duration={500}>About Me</Link></span>
+                      <span className='group-hover:rotate-90 duration-300 group-hover:text-black dark:group-hover:text-black'>
+                      <HiArrowNarrowRight size='1.25rem' />
+                      </span>
                     </span>
-                  </span>
-                </button>
-            </div>
+                  </button>
+              </div>
+            </Link>
           </div>
       </div>
   )
