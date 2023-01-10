@@ -13,8 +13,8 @@ const About = () => {
                     <h1 className='text-4xl font-bold inline border-b-4 border-pink-600'>About</h1>
                 </div>
                     </div>
-                <div className='max-w-[1400px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-                    <div className='sm:text-right text-4xl justify-center flex-col flex'>
+                <div className='max-w-[1400px] w-full grid sm:grid-cols-2 gap-8 px-4 jus'>
+                    <div className='sm:text-right text-4xl justify-center flex-col flex items-center'>
                         <p> Hello! I'm Nathan.</p>
                         <br />
                         <Link to='project'smooth={true} duration={500} ><p className='italic hover:text-pink-600 underline hover:cursor-pointer text-base'>Check out some of my recent projects</p></Link>

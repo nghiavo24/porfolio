@@ -78,7 +78,7 @@ const Skills = () => {
     <div name='skill' className='bg-[#0a192f] text-gray-300 w-full h-screen pt-60 2xl:pt-0'>
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div>
-                <h1 className='text-4xl text-gray-300 pb-4 font-bold inline border-pink-600'>Skills</h1>
+                <h1 className='text-4xl text-gray-300 font-bold inline border-b-4 border-pink-600'>Skills</h1>
                 <p className='py-4 text-2xl'>These are the technologies I've worked with</p>
             </div>
             <div className='w-full grid grid-cols-2 sm:grid-cols-5 gap-8 text-center py-8 px-12 sm:px-0'>
