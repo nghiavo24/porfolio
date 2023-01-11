@@ -4,7 +4,7 @@ import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs';
 import {Link} from 'react-scroll';
 import DarkModeLogo from '../assets/DarkModeLogo.png';
-
+import LightModeLogo from '../assets/LightModeLogo.png'
 import {motion as m} from 'framer-motion';
 import Switcher from './DarkMode/Switcher';
 
@@ -20,7 +20,12 @@ const Navbar = () => {
         animate={{x: 0, opacity: 1, scale: 1}}
         transition={{ duration: 1.2 }}
         >
-            <img src={DarkModeLogo} alt="Logo" className='w-[125px] pt-4' />
+            <div className='hidden dark:flex'>
+              <img src={DarkModeLogo} alt="Logo" className='w-[125px] pt-4' />
+            </div>
+            <div className='dark:hidden'>
+              <img src={LightModeLogo} alt="Logo" className='w-[125px] pt-4' />
+            </div>
         </m.div>
             <m.ul 
             initial={{x: 500, opacity: 0, scale: 1}}
