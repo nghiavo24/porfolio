@@ -48,8 +48,8 @@ const Navbar = () => {
           <div className='py-3 px-6'>
             <Switcher />
           </div>
-          <div onClick={handleClick}>
-            <button className="relative group">
+          <div>
+            <button className="relative group" onClick={handleClick}>
               <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all ring-0 ring-black hover:ring-5 group-focus:ring-4 dark:ring-gray-300 dark:hover:ring-8 dark:group-focus:ring-4 ring-opacity-75 dark:ring-opacity-30 duration-200 shadow-md">
                 <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
                   <div className="bg-black dark:bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-y-6 delay-100"></div>
