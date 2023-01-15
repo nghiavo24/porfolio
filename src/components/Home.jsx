@@ -6,11 +6,11 @@ import { useTypewriter} from 'react-simple-typewriter';
 export const Home = () => {
   const[text] = useTypewriter({
     words: [
-      "Hi there, let's build something amazing together.",
-      "Transforming ideas into reality, one line at a time. ",
-      "Empowering others through technology.",
-      "Unleashing the full potential of technology to solve real-world problems!",
-      "Can I buy you a cup of ☕ and have a chat 🫶?"
+      "Hi there, let's build something amazing together",
+      "Transforming ideas into reality, one line at a time",
+      "Empowering others through technology",
+      "Can I buy you a cup of ☕ and have a chat 🫶?",
+      "Remember to take a deep breath and enjoy life!"
     ],
     loop: true,
     delaySpeed: 2000,
@@ -26,7 +26,7 @@ export const Home = () => {
             <h2 className='text-[#f08080] text-xl sm:text-7xl italic dark:text-pink-600 py-2'>I'm a full-stack developer.</h2>
             <p className='dark:text-white py-4 max-w-[700px] text-base'>I'm a full-stack developer and a life-long learner that want to make, design and build products and ideas that matter and have a positive impact in every day life.</p>            
             <div className='text-xl py-4'>
-              <p className='text-[#f08080] dark:text-pink-500 text-lg sm:text-sm'>
+              <p className='text-[#f08080] dark:text-pink-500 text-base max-w-[800px] text-center px-2 h-[25px]'>
                 <span>{text}</span>
               </p>
             </div>
