@@ -44,10 +44,10 @@ const Project = () => {
     
   
   return (
-    <div name='project' className='w-full md:h-screen text-black bg-[#DDD4D0] dark:text-gray-300 dark:bg-[#211a1d]'>
+    <div name='project' className='w-full md:h-screen text-black bg-[#DDD4D0] dark:text-white dark:bg-[#211a1d]'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className='pt-52 2xl:pt-0'>
-          <h1 className='text-4xl font-bold inline border-b-4 dark:text-gray-300 border-[#F08080] dark:border-pink-600'>
+          <h1 className='text-4xl font-bold inline border-b-4  border-[#F08080] dark:border-pink-600'>
             Projects
           </h1>
           <p className='text-2xl py-6'>Check out some of my recent projects</p>
