@@ -22,11 +22,11 @@ export const Home = () => {
     <div name='home' className='bg-[#DDD4D0] dark:bg-[#211A1D] dark:text-white w-full h-screen  md:px-16'>
         <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center items-center h-full'>
             <p className=' text-[#f08080] dark:text-pink-600 text-xl pb-2'>Hi, my name is</p>
-            <h1 className='text-4xl sm:text-7xl font-bold'>Nathan Vo</h1>
+            <h1 className='text-4xl sm:text-xl font-bold'>Nathan Vo</h1>
             <h2 className='text-[#f08080] text-xl sm:text-7xl italic dark:text-pink-600 py-2'>I'm a full-stack developer.</h2>
             <p className='dark:text-white py-4 max-w-[700px] text-base'>I'm a full-stack developer and a life-long learner that want to make, design and build products and ideas that matter and have a positive impact in every day life.</p>            
             <div className='text-xl py-4'>
-              <p className='text-[#f08080] dark:text-pink-500'>
+              <p className='text-[#f08080] dark:text-pink-500 text-lg sm:text-sm'>
                 <span>{text}</span>
               </p>
             </div>
