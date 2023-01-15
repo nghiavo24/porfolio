@@ -33,44 +33,45 @@ const skills = [
         id: 4,
         src: javascript,
         title: 'JavaScript',
-        style: 'shadow-yellow-500'
+        style: 'shadow-yellow-400'
     },
     {
         id: 5,
         src: react,
         title: 'React',
-        style: 'shadow-blue-600'
+        style: 'shadow-[#15D7FD]'
     },
     {
         id: 6,
         src: tailwind,
         title: 'Tailwind',
-        style: 'shadow-sky-400'
+        style: 'shadow-[#45A8B3]'
     },
     {
         id: 7,
-        src: postgres,
-        title: 'PostgresQL',
-        style: 'shadow-gray-100'
-    },
-    {
-        id: 8,
-        src: mongodb,
-        title: 'MongoDB',
-        style: 'shadow-green-500'
-    }, 
-    {
-        id: 9,
         src: python,
         title: 'Python',
         style: 'shadow-yellow-400'
     },
     {
+        id: 8,
+        src: postgres,
+        title: 'PostgresQL',
+        style: 'shadow-gray-100'
+    },
+    {
+        id: 9,
+        src: mongodb,
+        title: 'MongoDB',
+        style: 'shadow-green-500'
+    }, 
+    {
         id: 10,
         src: git,
         title: 'Git',
         style: 'shadow-orange-600'
-    },
+    }
+    
 ]
 
 const Skills = () => {
