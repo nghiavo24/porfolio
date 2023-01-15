@@ -14,7 +14,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
 
   return (
-    <div className='bg-[#DDD4D0] fixed w-full h-[80px] flex justify-between items-center px-4 dark:bg-[#211A1D] dark:text-gray-200'>
+    <div className='bg-[#DDD4D0] fixed w-full h-[80px] flex justify-between items-center px-4 dark:bg-[#211A1D] dark:text-white'>
         <m.div
         initial={{x: -500, opacity: 0, scale: 1}}
         animate={{x: 0, opacity: 1, scale: 1}}
