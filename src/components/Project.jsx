@@ -13,7 +13,7 @@ const Project = () => {
             image: Project1,
             github:"https://github.com/nghiavo24/the-dev-hub-fe",
             live:"https://the-dev-hub.vercel.app/",
-            description: "Organization tool to facilitate job search. The app is fully functional, has full CRUD actions and equiped with Firebase authentication and styling was done using Tailwind."
+            description: "Organization tool to facilitate job search. The app has full CRUD actions and equiped with Firebase authentication and styling was done using Tailwind."
         },
         {
             id:2,
@@ -67,7 +67,7 @@ const Project = () => {
                   <span className='italic text-base'>
                     {item.description}
                   </span>
-                  <div className="pt-8 text-center">
+                  <div className="pt-4 text-center">
                     {/* eslint-disable-next-line */}
                     <a href={item.live} target="_blank">
                       <button className="text-center rounded-lg px-2 py-2 m-1 bg-white text-gray-700 font-bold text-lg">
