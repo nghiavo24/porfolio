@@ -5,7 +5,7 @@ import React from 'react';
 const Contact = () => {
 
   return (
-    <div name='contact' className='w-full h-screen bg-[#DDD4D0] dark:bg-[#211A1D] text-black dark:text-white flex justify-center items-center p-4'>
+    <div name='contact' className='w-full h-screen bg-[#DDD4D0] dark:bg-[#211A1D] text-black dark:text-white flex justify-center items-center pt-4'>
         <form method='POST' action='https://getform.io/f/55bb6a98-4c36-4302-8c27-57c0f3ef92b7' className='flex flex-col max-w-xl w-full'>
             <div className='pb-8'>
                 <h1 className='text-4xl font-bold inline border-b-4 border-[#f08080] dark:border-pink-600 dark:text-white'>Contact</h1>

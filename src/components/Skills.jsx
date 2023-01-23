@@ -76,8 +76,8 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div name='skill' className='bg-[#DDD4D0] dark:bg-[#211A1D] dark:text-white w-full h-screen pt-72 sm:pt-4 2xl:pt-0'>
-        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+    <div name='skill' className='bg-[#DDD4D0] dark:bg-[#211A1D] dark:text-white w-full h-fit xl:pt-20 xl:h-screen'>
+        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-fit'>
             <div>
                 <h1 className='text-4xl font-bold inline border-b-4 border-[#F08080] dark:border-pink-600'>Skills</h1>
                 <p className='py-4 text-2xl'>These are the technologies I have worked with:</p>

@@ -44,7 +44,7 @@ const Project = () => {
     
   
   return (
-    <div name='project' className='w-full md:h-screen text-black bg-[#DDD4D0] dark:text-white dark:bg-[#211a1d] pt-72 md:pt-12 xl:pt-0'>
+    <div name='project' className='w-full h-fit text-black bg-[#DDD4D0] dark:text-white dark:bg-[#211a1d] xl:pt-12 xl:h-screen'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div>
           <h1 className='text-4xl font-bold inline border-b-4  border-[#F08080] dark:border-pink-600'>

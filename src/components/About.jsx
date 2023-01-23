@@ -6,11 +6,11 @@ import {Link} from 'react-scroll'
 const About = () => {
 
   return (
-    <div name='about' className='w-full h-screen bg-[#DDD4D0] dark:bg-[#211A1D] dark:text-white'>
-        <div className='flex flex-col justify-center items-center w-full h-full'>
+    <div name='about' className='w-full h-fit bg-[#DDD4D0] dark:bg-[#211A1D] dark:text-white xl: pt-20 xl:h-screen'>
+        <div className='flex flex-col justify-center items-center'>
             <div className='max-w-[350px] w-full grid grid-cols-2 gap-8'>
                 <div className='sm:text-center pb-8 pl-4 col-span-5'>
-                    <h1 className='text-4xl font-bold inline dark:border-b-4 dark:border-pink-600'><span className='text-[#F08080] underline dark:text-white dark:no-underline'>More</span> About Me</h1>
+                    <h1 className='text-4xl font-bold inline border-b-4 border-[#F08080] dark:border-pink-600 dark:text-white'>More about me</h1>
                 </div>
                     </div>
                 <div className='max-w-[1400px] w-full grid sm:grid-cols-2 gap-8 px-4 jus'>
