@@ -9,7 +9,7 @@ const projects = [
         name:"The Dev Hub",
         image: Project1,
         github:"https://github.com/the-dev-hub-project",
-        live:"https://the-dev-hub.vercel.app/",
+        live:"https://www.the-dev-hub.devnathan.com/",
         description: "Organization tool to facilitate job search. The app has full CRUD actions and equiped with Firebase authentication and styling was done using Tailwind."
     },
     {
